@@ -28,9 +28,7 @@ function get_tweets($request) {
       array_push($json_data,$json_array);  
   }
   // wp_reset_query();
-  $tweet = array("id"=>35, "text"=>"message from tweet");
-  // $tweet = json_encode($tweet);
- 
+
   // create api { tweets: [{},{}...]}
   $json_tweets['tweets']=$json_data;
   
