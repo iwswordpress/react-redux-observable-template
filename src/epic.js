@@ -1,7 +1,7 @@
 import { ajax } from 'rxjs/ajax';
 import { ofType } from 'redux-observable';
 import { map, mergeMap, tap } from 'rxjs/operators';
-import { FETCH_TWEETS, fetchTweetsFulfilled } from './actions';
+import { FETCH_TWEETS, fetchItemsFulfilled } from './actions';
 const url0 = 'https://tweet-stream.glitch.me/api/tweets';
 const url1 = 'https://49plus.co.uk/wp-social/wp-json/wordcamp/v2/tweets/a';
 const fetchTweetsEpic = (action$) =>
@@ -13,7 +13,7 @@ const fetchTweetsEpic = (action$) =>
 
         .pipe(
           tap((data) => console.log('[EPIC TAP1]', data)),
-          map((response) => fetchTweetsFulfilled(response)),
+          map((response) => fetchItemsFulfilled(response)),
           tap((data) => console.log('[EPIC TAP2]', data)),
         ),
     ),
