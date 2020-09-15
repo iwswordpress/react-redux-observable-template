@@ -4,7 +4,7 @@ import { map, mergeMap, tap } from 'rxjs/operators';
 import { FETCH_ITEMS, fetchItemsFulfilled } from './actions';
 const url0 = 'https://tweet-stream.glitch.me/api/tweets';
 const url1 = 'https://49plus.co.uk/wp-social/wp-json/wordcamp/v2/tweets/a';
-const fetchTweetsEpic = (action$) =>
+const fetchItemsEpic = (action$) =>
   action$.pipe(
     ofType(FETCH_ITEMS),
     mergeMap((action) =>
@@ -19,4 +19,4 @@ const fetchTweetsEpic = (action$) =>
     ),
   );
 
-export default fetchTweetsEpic;
+export default fetchItemsEpic;
