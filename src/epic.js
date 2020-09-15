@@ -14,7 +14,7 @@ const fetchItemsEpic = (action$) =>
         .pipe(
           tap((data) => console.log('[EPIC TAP1]', data)),
           map((response) => fetchItemsFulfilled(response)),
-          tap((data) => console.log('[EPIC TAP2]', data)),
+          tap((data) => console.log('[EPIC TAP2 of type items:Array]', data)),
         ),
     ),
   );
