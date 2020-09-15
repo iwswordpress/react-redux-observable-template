@@ -11,7 +11,7 @@ import './styles.scss';
 import { createEpicMiddleware } from 'redux-observable';
 
 import rootEpic from './epic';
-import FetchTweets from './FetchTweets';
+import FetchItems from './FetchItems';
 import Items from './Items';
 import LoadingStatus from './LoadingStatus';
 
@@ -25,7 +25,7 @@ const Application = () => {
     <div className="Application">
       <h1>Get data</h1>
       <LoadingStatus>
-        <FetchTweets />
+        <FetchItems />
       </LoadingStatus>
       <Items />
     </div>
