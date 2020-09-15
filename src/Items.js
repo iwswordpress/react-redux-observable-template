@@ -6,7 +6,7 @@ import Item from './Item';
 const Items = ({ items = [] }) => {
   console.log('[ITEMS] ', items);
   return (
-    <section className="Tweets">
+    <section>
       {items.map((item) => (
         <Item key={item.id} item={item} />
       ))}
