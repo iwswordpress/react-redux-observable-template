@@ -3,14 +3,12 @@ import React from 'react';
 const Item = ({ item }) => {
   console.log('[ITEM] ', item);
   return (
-    <article className="Tweet">
+    <article className="Item">
       <header>
-        <h3>
-          {item.id} - {item.city}
-        </h3>
-        <p>
-          {item.latitude} : {item.longitude}
-        </p>
+        <h4>
+          {item.id} - {item.city} with latitude: {item.latitude}, longitude:{' '}
+          {item.longitude}
+        </h4>
       </header>
     </article>
   );

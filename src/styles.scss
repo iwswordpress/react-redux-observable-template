@@ -1,6 +1,6 @@
 $button-color: #c6d8d3;
 $danger-color: #f0544f;
-$control-color: #197278;
+$control-color: #2196f3;
 $font-color: #283d3b;
 
 @mixin input-style($color) {
@@ -90,8 +90,9 @@ input[type='submit'] {
   margin: 0.5em;
 }
 
-.Tweet {
-  border: 1px solid $control-color;
+.Item {
+  border: 2px solid $control-color;
+  border-radius: 10px;
   margin: 1em 0;
-  padding: 1em;
+  padding: 10px;
 }
