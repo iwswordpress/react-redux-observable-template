@@ -3,7 +3,7 @@ import { ofType } from 'redux-observable';
 import { map, mergeMap, tap } from 'rxjs/operators';
 import { FETCH_ITEMS, fetchItemsFulfilled } from './actions';
 const url0 = 'https://tweet-stream.glitch.me/api/tweets';
-const url1 = 'https://49plus.co.uk/wp-social/wp-json/wordcamp/v2/tweets/l';
+const url1 = 'https://49plus.co.uk/wp-social/wp-json/wordcamp/v2/items/w';
 const fetchItemsEpic = (action$) =>
   action$.pipe(
     ofType(FETCH_ITEMS),

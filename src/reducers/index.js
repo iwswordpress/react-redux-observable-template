@@ -3,7 +3,7 @@ import { FETCH_ITEMS, FETCH_ITEMS_FULFILLED } from '../actions';
 
 const items = (items = [], action) => {
   if (action.type === FETCH_ITEMS_FULFILLED) {
-    return action.payload.tweets;
+    return action.payload.items;
   }
   return items;
 };
