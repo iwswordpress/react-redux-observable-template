@@ -12,7 +12,7 @@ import { createEpicMiddleware } from 'redux-observable';
 
 import rootEpic from './epic';
 import FetchTweets from './FetchTweets';
-import Tweets from './Tweets';
+import Items from './Items';
 import LoadingStatus from './LoadingStatus';
 
 const epicMiddleware = createEpicMiddleware();
@@ -23,11 +23,11 @@ epicMiddleware.run(rootEpic);
 const Application = () => {
   return (
     <div className="Application">
-      <h1>Tweet Stream</h1>
+      <h1>Get data</h1>
       <LoadingStatus>
         <FetchTweets />
       </LoadingStatus>
-      <Tweets />
+      <Items />
     </div>
   );
 };

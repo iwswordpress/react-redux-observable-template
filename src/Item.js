@@ -1,19 +1,19 @@
 import React from 'react';
 
-const Tweet = ({ tweet }) => {
-  console.log('[TWEET] ', tweet);
+const Item = ({ item }) => {
+  console.log('[ITEM] ', item);
   return (
     <article className="Tweet">
       <header>
         <h3>
-          {tweet.id} - {tweet.city}
+          {item.id} - {item.city}
         </h3>
         <p>
-          {tweet.latitude} : {tweet.longitude}
+          {item.latitude} : {item.longitude}
         </p>
       </header>
     </article>
   );
 };
 
-export default Tweet;
+export default Item;
