@@ -27,7 +27,7 @@ function get_items($request) {
       // here pushing the record array in to another array  
       array_push($json_data,$json_array);  
   }
-  // wp_reset_query();
+  wp_reset_query();
 
   // create api { tweets: [{},{}...]}
   $json_items['items']=$json_data;

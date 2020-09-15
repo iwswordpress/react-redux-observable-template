@@ -23,7 +23,7 @@ epicMiddleware.run(rootEpic);
 const Application = () => {
   return (
     <div className="Application">
-      <h1>Get data</h1>
+      <h1>React-Redux-RxJS using cloud api</h1>
       <LoadingStatus>
         <FetchItems />
       </LoadingStatus>
