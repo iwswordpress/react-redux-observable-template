@@ -5,20 +5,15 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "lodash": "^4.17.20",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-redux": "7.0.3",
     "react-scripts": "2.1.8",
     "redux": "4.0.1",
-    "redux-observable": "1.1.0",
-    "redux-saga": "1.0.2",
-    "redux-thunk": "2.3.0",
-    "rxjs": "6.5.2"
+    "redux-observable": "1.1.0"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
-    "typescript": "3.3.3"
+    "node-sass": "^4.14.1"
   },
   "scripts": {
     "start": "react-scripts start",
