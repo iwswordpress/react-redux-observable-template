@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { FETCH_TWEETS, FETCH_TWEETS_FULFILLED } from '../actions';
+import { FETCH_ITEMS, FETCH_TWEETS_FULFILLED } from '../actions';
 
 const items = (items = [], action) => {
   if (action.type === FETCH_TWEETS_FULFILLED) {
@@ -9,7 +9,7 @@ const items = (items = [], action) => {
 };
 
 const status = (status = 'NOT_LOADED', action) => {
-  if (action.type === FETCH_TWEETS) {
+  if (action.type === FETCH_ITEMS) {
     return 'LOADING';
   }
 
