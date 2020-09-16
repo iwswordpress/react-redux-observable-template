@@ -5,7 +5,7 @@ import { fetchItems2 } from './actions';
 const FetchItems2 = ({ fetchItems2 }) => {
   return (
     <section className="FetchItems">
-      <button onClick={fetchItems2}>Fetch Items2</button>
+      <button onClick={fetchItems2}>Fetch Items</button>
     </section>
   );
 };
