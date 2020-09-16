@@ -5,5 +5,6 @@ export const fetchItems = () => ({ type: FETCH_ITEMS });
 
 export const fetchItemsFulfilled = (payload) => ({
   type: FETCH_ITEMS_FULFILLED,
-  payload,
+  // payload, OK if results:[{}]
+  payload: payload.results, // for random user as it has thee arrays
 });

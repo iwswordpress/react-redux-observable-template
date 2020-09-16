@@ -8,7 +8,8 @@ const Items = ({ items = [] }) => {
   return (
     <section>
       {items.map((item) => (
-        <Item key={item.id} item={item} />
+        // randomuser does not have id
+        <Item key={Math.random()} item={item} />
       ))}
     </section>
   );

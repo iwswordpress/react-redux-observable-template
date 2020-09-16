@@ -4,8 +4,8 @@ import { FETCH_ITEMS, FETCH_ITEMS_FULFILLED } from '../actions';
 const items = (items = [], action) => {
   if (action.type === FETCH_ITEMS_FULFILLED) {
     console.log('This needs to be of type array');
-    console.log('[reducer] ', action.payload.items);
-    return action.payload.items;
+    console.log('[reducer] ', action.payload.results); // needs right array
+    return action.payload;
   }
   return items;
 };
