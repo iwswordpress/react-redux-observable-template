@@ -10,7 +10,7 @@ import './styles.scss';
 
 import { createEpicMiddleware } from 'redux-observable';
 
-import rootEpic from './epic';
+import { fetchItemsEpic2, fetchItemsEpic } from './epic';
 import FetchItems2 from './FetchItems2';
 import Items2 from './Items2';
 import LoadingStatus from './LoadingStatus';
@@ -18,7 +18,7 @@ import LoadingStatus from './LoadingStatus';
 const epicMiddleware = createEpicMiddleware();
 const store = createStore(rootReducer, applyMiddleware(epicMiddleware));
 
-epicMiddleware.run(rootEpic);
+epicMiddleware.run(fetchItemsEpic2, fetchItemsEpic);
 
 const Application = () => {
   return (
