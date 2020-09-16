@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Item = ({ item }) => {
-  console.log('[ITEM] ', item);
+const Item2 = ({ item2 }) => {
+  console.log('[ITEM2] ', item2);
   return (
     <article className="Item">
       <header>
         <h4>
-          {item.email}
+          {item2.email}
           {/* {item.city} with latitude: {item.latitude}, longitude:{' '}
           {item.longitude} */}
         </h4>
@@ -15,4 +15,4 @@ const Item = ({ item }) => {
   );
 };
 
-export default Item;
+export default Item2;

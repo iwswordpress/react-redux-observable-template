@@ -12,7 +12,7 @@ import { createEpicMiddleware } from 'redux-observable';
 
 import rootEpic from './epic';
 import FetchItems2 from './FetchItems2';
-import Items from './Items';
+import Items2 from './Items2';
 import LoadingStatus from './LoadingStatus';
 
 const epicMiddleware = createEpicMiddleware();
@@ -27,7 +27,7 @@ const Application = () => {
       <LoadingStatus>
         <FetchItems2 />
       </LoadingStatus>
-      <Items />
+      <Items2 />
     </div>
   );
 };
