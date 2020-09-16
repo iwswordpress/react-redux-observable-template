@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchItems2 } from './actions';
+import { fetchItems } from './actions';
 
-const FetchItems2 = ({ fetchItems2 }) => {
+const FetchItems = ({ fetchItems }) => {
   return (
     <section className="FetchItems">
-      <button onClick={fetchItems2}>Fetch Items</button>
+      <button onClick={fetchItems}>Fetch Items</button>
     </section>
   );
 };
 
-export default connect(null, { fetchItems2 })(FetchItems2);
+export default connect(null, { fetchItems })(FetchItems);

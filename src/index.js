@@ -12,6 +12,7 @@ import { createEpicMiddleware } from 'redux-observable';
 
 import { fetchItemsEpic2, fetchItemsEpic } from './epic';
 import FetchItems2 from './FetchItems2';
+import FetchItems from './FetchItems';
 import Items2 from './Items2';
 import LoadingStatus from './LoadingStatus';
 
@@ -25,6 +26,7 @@ const Application = () => {
     <div className="Application">
       <h1>React-Redux-RxJS using cloud api</h1>
       <LoadingStatus>
+        <FetchItems />
         <FetchItems2 />
       </LoadingStatus>
       <Items2 />
