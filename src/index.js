@@ -10,23 +10,22 @@ import './styles.scss';
 
 import { createEpicMiddleware } from 'redux-observable';
 
-import { fetchItemsEpic2, fetchItemsEpic } from './epic';
+import { fetchItemsEpic2 } from './epic2';
 import FetchItems2 from './FetchItems2';
-import FetchItems from './FetchItems';
+
 import Items2 from './Items2';
 import LoadingStatus from './LoadingStatus';
 
 const epicMiddleware = createEpicMiddleware();
 const store = createStore(rootReducer, applyMiddleware(epicMiddleware));
 
-epicMiddleware.run(fetchItemsEpic2, fetchItemsEpic);
+epicMiddleware.run(fetchItemsEpic2);
 
 const Application = () => {
   return (
     <div className="Application">
       <h1>React-Redux-RxJS using cloud api</h1>
       <LoadingStatus>
-        <FetchItems />
         <FetchItems2 />
       </LoadingStatus>
       <Items2 />
